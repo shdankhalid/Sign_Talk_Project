@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="WordDetector.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.19">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ML" Version="2.0.0" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.7.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WordDetector.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+</Project>
